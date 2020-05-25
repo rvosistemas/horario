@@ -7,8 +7,8 @@ def activity():
     return Activity(
         id=1,
         name='correr',
-        create_at='2013-01-15 10: 00',
-        update_at='2013-01-15 10: 00',
+        created_at='2013-01-15 10: 00',
+        updated_at='2013-01-15 10: 00',
         description='correr en 30 min',
         duration='00: 00: 00',
         hour='00: 00: 00',
@@ -26,8 +26,8 @@ def test_activity_instantiation(activity):
 def test_activity_attributes(activity):
     assert activity.id == 1
     assert activity.name == 'correr'
-    assert activity.create_at == '2013-01-15 10: 00'
-    assert activity.update_at == '2013-01-15 10: 00'
+    assert activity.created_at == '2013-01-15 10: 00'
+    assert activity.updated_at == '2013-01-15 10: 00'
     assert activity.description == 'correr en 30 min'
     assert activity.duration == '00: 00: 00'
     assert activity.hour == '00: 00: 00'

@@ -3,9 +3,9 @@ from .entity import Entity
 
 class Alarm(Entity):
     def __init__(
-            self, id, name, create_at, update_at, alarmType,
+            self, id, name, created_at, updated_at, alarmType,
             soundPath, imagePath):
-        super(Alarm, self).__init__(id, name, create_at, update_at)
+        super(Alarm, self).__init__(id, name, created_at, updated_at)
         self.alarmType = alarmType
-        self.sound = soundPath
-        self.image = imagePath
+        self.soundPath = soundPath
+        self.imagePath = imagePath
